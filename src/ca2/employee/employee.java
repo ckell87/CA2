@@ -24,5 +24,23 @@ public class employee {     //new employee class
         this.email = "email";
         this.empNum = nextEmpNum++;
     }
-    
+    public String getName(){
+        return name;
+    }   
+    public String getEmail(){
+        return email;
+    }
+    public int getEmpNum(){
+        return empNum;
+    }
+    public void setEmail(String email){ //set new email as string once validated
+        if (email.length()>3){
+            this.email = email;
+        } else {
+            System.out.println("Email must be longer than 3 characters");
+        }
+    }
+    public int getNextEmpNum(){  //return current empNum count/value
+        return nextEmpNum;
+    }
 }
