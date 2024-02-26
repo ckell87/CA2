@@ -6,30 +6,38 @@ package ca2;
 
 import ca2.employee.employee;
 
- class EmployeeTest { 
+class EmployeeTest {
+
     public static void main(String[] args) {
-        System.out.println("employee test"); 
-         employee emp1 = new employee("Joe Bloggs", "jb@gmail.com");
-         employee emp2 = new employee("Ann Banana", "ab@gmail.com");
-         employee emp3 = new employee("Tom Thumb", "tt@gmail.com");
-         
-         // String[] projectGroup {"emp1", "emp2", "emp3"}; 
-         
-    }   
-    }   
-/**
- *
- * @author under
- */
+
+        employee[] projectGroup = new employee[3];// array of three employee objects
+        employee emp1 = new employee("Joe Bloggs", "jb@gmail.com");
+        employee emp2 = new employee("Ann Banana", "ab@gmail.com");
+        employee emp3 = new employee("Tom Thumb", "tt@gmail.com");
+
+        projectGroup[0] = emp1;
+        projectGroup[1] = emp2;
+        projectGroup[2] = emp3;
+        System.out.println("current employee number is " + employee.nextEmpNum);
+
+        int m = 1;
+        for (employee employee : projectGroup) {
+            if (employee.getEmpNum() > m) {
+                System.out.println("employee's after m: " + employee.getName());
+            }
+        }
+
+    }
+}
+
+
 public class CA2 {
 
-
-   
     public static void main(String[] args) {
-       
-        System.out.println("main method");   
-        
-    
+        EmployeeTest.main(args);
+       // AnotherClass.main(args);
+
     }
-}  
+}
+
 

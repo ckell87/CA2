@@ -20,8 +20,8 @@ public class employee {     //new employee class
         this.empNum = nextEmpNum++;
     }
     public employee(String name, String email){
-        this.name ="name";
-        this.email = "email";
+        this.name =name;
+        this.email = email;
         this.empNum = nextEmpNum++;
     }
     public String getName(){
@@ -42,5 +42,8 @@ public class employee {     //new employee class
     }
     public int getNextEmpNum(){  //return current empNum count/value
         return nextEmpNum;
+        
+        
+        
     }
 }
