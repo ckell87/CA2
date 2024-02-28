@@ -34,7 +34,7 @@ class EmployeeTest {
 public class CA2 {
 
     public static void main(String[] args) {
-        EmployeeTest.main(args);//test employee test
+        EmployeeTest.main(args);//call employeeTest main method
        
 
     }
