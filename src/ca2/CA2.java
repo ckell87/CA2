@@ -4,7 +4,18 @@
  */
 package ca2;
 
+import ca2.company.company;
 import ca2.employee.employee;
+import ca2.menu.menu;
+import java.util.Scanner;
+
+public class CA2 {
+
+    public static void main(String[] args) {
+        EmployeeTest.main(args);//call employeeTest main method
+        
+    }
+}
 
 class EmployeeTest {
 
@@ -29,15 +40,3 @@ class EmployeeTest {
 
     }
 }
-
-
-public class CA2 {
-
-    public static void main(String[] args) {
-        EmployeeTest.main(args);//call employeeTest main method
-       
-
-    }
-}
-
-
