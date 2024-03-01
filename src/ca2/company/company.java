@@ -17,11 +17,6 @@ public class company {
     public String companyName;
     public ArrayList<employee> staff;
 
-    public company() {
-        this.companyName = "default company";
-        this.staff = new ArrayList<>();
-    }
-
     public company(String companyName) {
         this.companyName = companyName;
         this.staff = new ArrayList<>();
@@ -38,11 +33,25 @@ public class company {
     public void listEmployees(int empNumInt) {
         Iterator<employee> Iterator = staff.iterator();
         while (Iterator.hasNext()) {
-               employee employee = Iterator.next();
-        if (employee.getEmpNum() > empNumInt) {
-               System.out.println("employee names are = " + employee.getName());
+            employee employee = Iterator.next();
+            if (employee.getEmpNum() > empNumInt) {
+                System.out.println("employee names are = " + employee.getName());
 
             }
         }
     }
+
+    public void removeStaff(int empNum) {
+        Iterator<employee> iterator = staff.iterator();
+        while (iterator.hasNext()) {
+            employee emp = iterator.next();
+            if (emp.getEmpNum() == empNum) {
+                iterator.remove();
+                System.out.println("Employee with empNum " + empNum + " has been removed.");
+                return;
+            }
+        }
+
+    }
+
 }
