@@ -10,7 +10,7 @@ import ca2.employee.employee;
  *
  * @author under
  */
-    public class manager extends employee {
+public class manager extends employee {
 
     public String username;
     public String password;
@@ -37,6 +37,3 @@ import ca2.employee.employee;
         this.password = password;
     }
 }
-
-    
-

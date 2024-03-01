@@ -13,7 +13,7 @@ public class employee {     //new employee class
     public String name;
     public String email;
     public int empNum;
-    public static int nextEmpNum = 1; //Starts emplyee number at 1
+    public static int nextEmpNum = 1; //Starts employee number at 1
 
     public employee() {
         this.name = "default name";
@@ -51,4 +51,3 @@ public class employee {     //new employee class
         return nextEmpNum;
     }
 }
-
